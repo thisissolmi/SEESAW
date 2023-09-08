@@ -26,6 +26,29 @@ class _LoginState extends State<Login> {
         ),
         backgroundColor: Color(0xFFF6F6F6),
       ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(21, 62, 0, 0),
+            child: Text(
+              "돌아오셨군요! \n다시만나 반가워요",
+              style: TextStyle(fontSize: 21),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(21, 23, 21, 20),
+            child: TextField(
+              decoration: InputDecoration(labelText: '아이디(이메일'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(21, 0, 21, 20),
+            child: TextField(
+              decoration: InputDecoration(labelText: '비밀번호'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

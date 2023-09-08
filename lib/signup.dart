@@ -24,6 +24,8 @@ class _SignupState extends State<Signup> {
             },
           ),
         ),
-        body: Text("돌아오셨군요! \n 다시 만나 반가워요"));
+        body: Column(
+          children: [Text(("시장소리의 서비스 이용약관에\n 동의해주세요."))],
+        ));
   }
 }

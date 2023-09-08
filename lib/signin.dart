@@ -1,5 +1,3 @@
-//로그인
-
 import 'package:flutter/material.dart';
 import 'package:seesaw_1/signup.dart';
 import './login.dart';
@@ -25,12 +23,14 @@ class _SigninState extends State<Signin> {
           SizedBox(
             height: 50,
           ),
+
+          // 신규 회원가입 버튼
           OutlinedButton(
             style: FilledButton.styleFrom(
               backgroundColor: Color(0xFFFF6F6F6),
             ),
             onPressed: () {
-              Navigator.pop(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Signup()),
               );
@@ -42,12 +42,14 @@ class _SigninState extends State<Signin> {
               ),
             ),
           ),
+
+          // 기존 유저 로그인 버튼
           OutlinedButton(
             style: FilledButton.styleFrom(
               backgroundColor: Color(0xFFFF6F6F6),
             ),
             onPressed: () {
-              Navigator.pop(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Login()),
               );
