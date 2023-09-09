@@ -12,20 +12,29 @@ class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          leading: IconButton(
-            icon: Icon(Icons.menu), // 햄버거버튼 아이콘 생성
-            onPressed: () {
-              Navigator.pop(
-                context,
-                MaterialPageRoute(builder: (context) => Signin()),
-              );
-            },
+      appBar: AppBar(
+        elevation: 0.0,
+        leading: IconButton(
+          color: Colors.black,
+          onPressed: () {
+            Navigator.pop(
+              context,
+              MaterialPageRoute(builder: (context) => Signin()),
+            );
+          },
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+        backgroundColor: Color(0xFFF6F6F6),
+      ),
+      body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(23, 64, 0, 0),
+          child: Text(
+            "시장소리의 서비스 이용약관에\n동의해주세요",
+            style: TextStyle(fontSize: 21),
           ),
         ),
-        body: Column(
-          children: [Text(("시장소리의 서비스 이용약관에\n 동의해주세요."))],
-        ));
+      ]),
+    );
   }
 }
