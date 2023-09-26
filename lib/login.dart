@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seesaw_1/signup.dart';
 import './signin.dart';
+import './idsearch.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -88,7 +89,7 @@ class _LoginState extends State<Login> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Signup()),
+                    MaterialPageRoute(builder: (context) => IdSearch()),
                   );
                 },
                 child: Text(
@@ -100,7 +101,7 @@ class _LoginState extends State<Login> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Signup()),
+                    MaterialPageRoute(builder: (context) => IdSearch()),
                   );
                 },
                 child: Text(
@@ -112,7 +113,7 @@ class _LoginState extends State<Login> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Login()),
+                    MaterialPageRoute(builder: (context) => IdSearch()),
                   );
                 },
                 child: Text(
