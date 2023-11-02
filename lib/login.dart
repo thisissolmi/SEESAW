@@ -85,42 +85,45 @@ class _LoginState extends State<Login> {
           ),
           Row(
             children: [
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => IdSearch()),
-                  );
-                },
-                child: Text(
-                  "신규 회원가입하기  | ",
-                  style: TextStyle(color: Colors.black),
+              Row(children: [
+                Padding(padding: EdgeInsets.all(10)),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => IdSearch()),
+                    );
+                  },
+                  child: Text(
+                    "신규 회원가입하기  | ",
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => IdSearch()),
-                  );
-                },
-                child: Text(
-                  "아이디 찾기   | ",
-                  style: TextStyle(color: Colors.black),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => IdSearch()),
+                    );
+                  },
+                  child: Text(
+                    "아이디 찾기   | ",
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => IdSearch()),
-                  );
-                },
-                child: Text(
-                  "비밀번호 찾기",
-                  style: TextStyle(color: Colors.black),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => IdSearch()),
+                    );
+                  },
+                  child: Text(
+                    "비밀번호 찾기",
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-              ),
+              ])
             ],
           )
         ],
